@@ -2,7 +2,7 @@
 
 Agent skills for the jobs of running a mobile app: store optimization, review replies, Apple Search Ads, app metrics, launching and building.
 
-Install one with `npx skills add fload-ai/mobile-app-skills --skill <name>`.
+Install them with `npx skills add fload-ai/mobile-app-skills`.
 
 | Skill | What it does |
 |---|---|
@@ -13,4 +13,4 @@ Install one with `npx skills add fload-ai/mobile-app-skills --skill <name>`.
 | [launch-an-app](skills/launch-an-app/SKILL.md) | Take an app to the App Store and Google Play |
 | [build-an-app](skills/build-an-app/SKILL.md) | Go from an idea to a made app |
 
-Draft, not published yet.
+Each skill teaches the job on its own. Each ends with how to do it through [Fload](https://fload.com), if you use it.

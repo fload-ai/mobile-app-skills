@@ -67,7 +67,7 @@ These are cheaper to build in than to add after a rejection:
 
 ## Works best through Fload: connect with MCP or the CLI
 
-[Fload](https://fload.com) can build the app with you: you describe the idea, Fload drafts the plan (name, promise, screens, plans and look), you edit it, and Fload builds the app screen by screen, showing each screen as it is made. A built app then moves into a launch on your own Apple account. The app builder is opening to organizations in stages: when your connection lists the `builder_apps_list` tool, it is open to you.
+[Fload](https://fload.com) can build the app with you: you describe the idea, Fload drafts the plan (name, promise, screens, plans and look), you edit it, and Fload builds the app screen by screen, showing each screen as it is made. A built app then moves into a launch on your own Apple account. The app builder is coming to Fload: it opens to organizations in stages.
 
 **Connect** (one of):
 
@@ -76,11 +76,10 @@ These are cheaper to build in than to add after a rejection:
 - Any MCP client with an API key (from platform.fload.com → Settings → API keys): run `npx -y @fload-ai/mcp` with `FLOAD_API_KEY` set
 - A terminal: `npm install -g @fload-ai/cli`, then `fload login`
 
-**What Fload adds to this skill** (where the app builder is open):
+**What Fload adds to this skill**, once the app builder is open to you:
 
-- `builder_app_create` for a new app from its idea; `builder_draft` writes the plan.
-- `builder_app_update`, `builder_screen_add`, `builder_screen_update` and `builder_price_add` to edit the plan; `builder_name_check` to check the name.
-- `builder_build_progress` to follow the build screen by screen.
-- `builder_create_launch` to move the built app into a launch (see the `launch-an-app` skill).
+- Start an app from its idea and get a drafted plan you can edit: name, promise, screens, plans and look.
+- Check the name, then follow the build screen by screen.
+- Move the built app into a launch (see the `launch-an-app` skill).
 
 Install the Fload skill too: `npx skills add fload-ai/mcp --skill fload`.

@@ -71,7 +71,7 @@ Review of a new app can take several days. A policy rejection names the policy; 
 
 ## Works best through Fload: connect with MCP or the CLI
 
-[Fload](https://fload.com) can carry a launch for you: it tracks each step on App Store Connect and Google Play, proposes the App Privacy answers and the first listing from what the app does, researches keywords before launch, reads App Review's feedback point by point, and stages every change for your approval. Launches are opening to organizations in stages: when your connection lists the `launches_list` tool, they are open to you.
+[Fload](https://fload.com) can carry a launch for you: it tracks each step on App Store Connect and Google Play, proposes the App Privacy answers and the first listing from what the app does, researches keywords before launch, reads App Review's feedback point by point, and stages every change for your approval. Launches are coming to Fload: they open to organizations in stages.
 
 **Connect** (one of):
 
@@ -80,12 +80,11 @@ Review of a new app can take several days. A policy rejection names the policy; 
 - Any MCP client with an API key (from platform.fload.com → Settings → API keys): run `npx -y @fload-ai/mcp` with `FLOAD_API_KEY` set
 - A terminal: `npm install -g @fload-ai/cli`, then `fload login`
 
-**What Fload adds to this skill** (where launches are open):
+**What Fload adds to this skill**, once launches are open to you:
 
-- `launches_list` for your launches; `launch_start` (App Store, on your own App Store Connect team) or `launch_start_google_play` to begin one; `launch_status` for each step and who acts next.
-- `launch_describe` to say what the app does: the first listing, the App Privacy proposal and the keyword research start from it.
-- `launch_privacy` and `launch_privacy_propose` for the App Privacy answers; `launch_research` for keyword research before launch.
-- `launch_approvals` for what waits on you; approve in Fload or from your own login.
-- `launch_app_review` when App Review sends a launch back: Apple's words, each point and where its fix stands.
+- Start a launch on the App Store (on your own App Store Connect team) or Google Play, and see each step and who acts next.
+- Say what the app does once: the first listing, the App Privacy proposal and the keyword research start from it.
+- Approve what waits on you, in Fload or from your own login.
+- When App Review sends a launch back: Apple's words, each point and where its fix stands.
 
 After launch, every other Fload tool applies. Install the Fload skill too: `npx skills add fload-ai/mcp --skill fload`.
