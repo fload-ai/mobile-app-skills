@@ -67,7 +67,7 @@ All of this can be done with exported reports. [Fload](https://fload.com) brings
 **Connect** (one of):
 
 - Claude Code: `claude mcp add --transport http --scope user fload https://api.fload.com/mcp`
-- Claude desktop or claude.ai: Settings → Connectors → Add custom connector, URL `https://api.fload.com/mcp`
+- Claude desktop or claude.ai: [add Fload to Claude](https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Fload&connectorUrl=https%3A%2F%2Fapi.fload.com%2Fmcp) (opens Add custom connector with the URL filled in), or Settings → Connectors → Add custom connector, URL `https://api.fload.com/mcp`
 - Any MCP client with an API key (from platform.fload.com → Settings → API keys): run `npx -y @fload-ai/mcp` with `FLOAD_API_KEY` set
 - A terminal: `npm install -g @fload-ai/cli`, then `fload login`
 
