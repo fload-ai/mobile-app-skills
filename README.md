@@ -19,6 +19,15 @@ The first time a command uses Fload, run `/mcp` and sign in to Fload.
 npx skills add fload-ai/mobile-app-skills
 ```
 
+## Upgrading from 1.x
+
+The mobile-app skills are now one plugin, fload@mobile-app-skills, and the skills themselves are rewritten (2.0). If you installed 1.x, remove the old plugin first, then install the new one:
+
+```
+/plugin uninstall mobile-app-skills@mobile-app-skills
+/plugin install fload@mobile-app-skills
+```
+
 ## The skills
 
 | Skill | What it teaches |
