@@ -3,7 +3,7 @@ name: mobile-app-metrics
 description: Use when reading or reporting a mobile app's downloads, revenue, proceeds, subscriptions, retention, conversion or ratings, building an app dashboard, explaining why a metric moved, or summing app metrics over days, countries or apps.
 license: MIT
 metadata:
-  version: '1.0.0'
+  version: '1.0.1'
 ---
 
 # Mobile App Metrics
@@ -78,6 +78,5 @@ All of this can be done with exported reports. [Fload](https://fload.com) brings
 - `getMetrics` for a metric's daily series and its total; quote the total, which is already aggregated the right way.
 - `getComputedMetrics` for ratios (conversion, ARPU and the like) recomputed per day from their parts, never averaged; `getDashboardOverview` for the whole portfolio.
 - `getDownloadImpact` to judge a listing change on organic search downloads against the same weeks last year.
-- `getValuation` for an estimate of what the app is worth from its own numbers.
 
 For every Fload tool, install the Fload skill too: `npx skills add fload-ai/mcp --skill fload`.
