@@ -1,13 +1,13 @@
 {
   "name": "mobile-app-skills",
-  "description": "Agent skills for the jobs of running a mobile app: store optimization, review replies, Apple Search Ads, app metrics, launching and building.",
+  "description": "Agent skills for the jobs of running a mobile app: store optimization, review replies, Apple Search Ads, app metrics, building and launching.",
   "owner": { "name": "Fload" },
   "plugins": [
     {
-      "name": "mobile-app-skills",
+      "name": "fload",
       "source": "./",
-      "description": "Agent skills for the jobs of running a mobile app: store optimization, review replies, Apple Search Ads, app metrics, launching and building.",
-      "version": "1.0.1",
+      "description": "Agent skills for the jobs of running a mobile app (store optimization, review replies, Apple Ads, app metrics, building and launching), with Fload's MCP server and three read-only commands: morning, reviews and keywords.",
+      "version": "2.0.0",
       "skills": [
         "./skills/app-store-optimization",
         "./skills/app-review-replies",

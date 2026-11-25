@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "fload": {
+      "type": "http",
+      "url": "https://api.fload.com/mcp"
+    }
+  }
+}
