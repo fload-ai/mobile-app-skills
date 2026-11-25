@@ -1,0 +1,21 @@
+{
+  "name": "mobile-app-skills",
+  "description": "Agent skills for the jobs of running a mobile app: store optimization, review replies, Apple Search Ads, app metrics, launching and building.",
+  "owner": { "name": "Fload" },
+  "plugins": [
+    {
+      "name": "mobile-app-skills",
+      "source": "./",
+      "description": "Agent skills for the jobs of running a mobile app: store optimization, review replies, Apple Search Ads, app metrics, launching and building.",
+      "version": "1.0.0",
+      "skills": [
+        "./skills/app-store-optimization",
+        "./skills/app-review-replies",
+        "./skills/apple-search-ads",
+        "./skills/mobile-app-metrics",
+        "./skills/launch-an-app",
+        "./skills/build-an-app"
+      ]
+    }
+  ]
+}
