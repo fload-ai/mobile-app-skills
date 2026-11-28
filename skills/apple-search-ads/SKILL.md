@@ -3,7 +3,7 @@ name: apple-search-ads
 description: Use when setting up, auditing or optimizing Apple Ads (Apple Search Ads) campaigns, choosing between Manage Bids and Maximize Conversions, structuring campaigns per country, choosing keywords, match types and negative keywords, setting or stepping a starting bid, moving bids or budgets, mining search term reports, cutting wasted spend, reading whether a change worked, or judging whether Apple Ads spend pays back.
 license: MIT
 metadata:
-  version: '2.0.0'
+  version: '2.1.0'
 ---
 
 # Apple Ads (Apple Search Ads)
@@ -38,7 +38,7 @@ It works by hand in the Apple Ads console. The numbers in one table are in [refe
 
 1. **Every money change is a person's decision.** Show the current bid or budget, the new one and the change, then make it. A tool may propose; a person presses.
 2. **Judge nothing on fewer than 20 taps.** Below that, a keyword or search term gets no pause, no block and no bid move. It is still learning.
-3. **Count first-time downloads from a tap.** Redownloads are not new users, and view-through installs are not proof the ad worked. In Apple's reports, judge keywords on **Avg CPA (Tap-Through)**, never on Avg CPA (Total), which also counts view-through installs.
+3. **Count downloads from a tap, first-time or redownload** (a paid download). Value per download counts both, so the cost has to count the same downloads. View-through installs are not proof the ad worked. In Apple's reports, judge keywords on **Avg CPA (Tap-Through)**, never on Avg CPA (Total), which also counts view-through installs.
 4. **A missing number is "not measured", never zero.** A day Apple has not reported is waited for, not read as no spend. A missing impression share is unknown, not 0%.
 5. **Keep age and gender targeting off.** They narrow delivery and make results hard to attribute.
 6. **Change one thing, then wait for its read.** Several changes at once leave you nothing to learn.
@@ -47,13 +47,13 @@ It works by hand in the Apple Ads console. The numbers in one table are in [refe
 
 You cannot judge cost without value.
 
-- **Value per download** is what a new user brings: proceeds after the store's fee, not gross revenue.
+- **Value per download** is what a download brings, first-time or redownload: proceeds after the store's fee, not gross revenue.
   - Read it at **day 35** first.
   - Then project it at **day 90** and **day 365**, because subscriptions renew and trials convert.
-  - To plan a country, use its new users of the last 90 days and what they brought by day 35.
-- **A country has a clear read** of its own value only with at least **100 new users and at least one payer** in the window. Otherwise borrow the value of comparable countries and say so.
-- **Break-even cost per download** is that value. A campaign pays when its cost per first-time download is at or under it. Read whether a campaign pays at day 14 and confirm it at day 30; never judge on 7 days.
-- **Coverage** is value per download ÷ cost per first-time download from a tap.
+  - To plan a country, use its downloads of the last 90 days and what they brought by day 35.
+- **A country has a clear read** of its own value only with at least **100 downloads and at least one payer** in the window. Otherwise borrow the value of comparable countries and say so.
+- **Break-even cost per download** is that value. A campaign pays when its cost per paid download is at or under it. Read whether a campaign pays at day 14 and confirm it at day 30; never judge on 7 days.
+- **Coverage** is value per download ÷ cost per paid download.
   - At 1.0 or more the spend pays back.
   - From 0.7 up to 1.0 it is close.
   - Under 0.7 it does not pay.
@@ -65,7 +65,7 @@ You cannot judge cost without value.
 
 - **Rank countries by expected value:** value per download, the search demand you can reach, and what taps cost there. Launch them in that order.
 - **Each country is its own market.** Run its campaigns separately. Never borrow another country's cost per tap.
-- **Give each country a learning budget:** enough to buy about **300 first-time downloads over 30 days**, roughly 10 a day at that market's cost. Less than that and nothing can be read in a month.
+- **Give each country a learning budget:** enough to buy about **300 paid downloads over 30 days**, roughly 10 a day at that market's cost. Less than that and nothing can be read in a month.
 - **Leave out** a country with no ads history and too few downloads to read (under about 100 in the window) until you have a reason to test it.
 
 ## Step 3: Build six campaigns per country
@@ -151,7 +151,7 @@ Start from what the keyword can afford:
 - **What each number tells you:**
   - **Tap-through rate** (taps ÷ impressions) low: the ad, meaning your listing's name and first screenshots, does not match the search.
   - **Conversion rate** (installs ÷ taps) low: the product page does not sell to that searcher.
-  - **Cost per first-time download** against break-even: does it pay?
+  - **Cost per paid download** against break-even: does it pay?
   - **Coverage** at day 35, then 90 and 365: does it pay back over time?
 - **Search popularity** is relative demand, not a search count. The console shows it from 1 to 5. Apple also gives a 1 to 100 score and an in-genre score, with weekly and monthly history, through its Ads insights and its platform API.
 
@@ -202,7 +202,7 @@ End the audit with the three changes worth the most money, each with its current
 - Pausing brand to "save money" without checking who bids on your name.
 - Adding "free" as a negative for a free-to-download app, which blocks good traffic.
 - Judging a keyword on 3 days, or under 20 taps.
-- Counting redownloads as new users, or calling a keyword profitable on installs before any revenue.
+- Counting view-through installs as downloads the ad brought, or calling a keyword profitable on installs before any revenue.
 - Reading a move inside normal noise as a win.
 
 ## A worked example
@@ -210,10 +210,10 @@ End the audit with the three changes worth the most money, each with its current
 *Pocket Ledger*, a demo budgeting app, launching in the UK.
 
 1. **Value:**
-   - 640 new UK users in the last 90 days, 21 of them paying, so the country has a clear read;
+   - 640 UK downloads in the last 90 days, 21 of them paying, so the country has a clear read;
    - by day 35 they brought $2.40 each in proceeds;
-   - break-even cost per first-time download is $2.40.
-2. **Budget:** 300 downloads over 30 days at an expected $2 each is about $600, so $20 a day, or about $3.33 a campaign across six.
+   - break-even cost per download is $2.40.
+2. **Budget:** 300 paid downloads over 30 days at an expected $2 each is about $600, so $20 a day, or about $3.33 a campaign across six.
 3. **Structure:**
    - brand ("pocket ledger");
    - 25 exact terms ("budget planner", "expense tracker", ...);

@@ -7,7 +7,7 @@
       "name": "fload",
       "source": "./",
       "description": "Agent skills for the jobs of running a mobile app (store optimization, review replies, Apple Ads, app metrics, building and launching), with Fload's MCP server and three read-only commands: morning, reviews and keywords.",
-      "version": "2.0.1",
+      "version": "2.1.0",
       "skills": [
         "./skills/app-store-optimization",
         "./skills/app-review-replies",

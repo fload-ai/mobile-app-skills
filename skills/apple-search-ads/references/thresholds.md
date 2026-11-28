@@ -8,9 +8,9 @@ Every number the method in [../SKILL.md](../SKILL.md) uses, in one place. The bi
 |---|---|
 | Day 35 | Value per download is first read at day 35, from proceeds (after the store's fee), not gross revenue. |
 | Days 90 and 365 | Value is then projected at day 90 and day 365. |
-| 90 days | To plan a country, use its new users of the last 90 days. |
-| 100 new users and 1 payer | The least a country needs for a clear read of its own value. With less, borrow comparable countries' value. |
-| Coverage 1.0 | Value per download ÷ cost per first-time download from a tap. At 1.0 or more the spend pays back. |
+| 90 days | To plan a country, use its downloads of the last 90 days. |
+| 100 downloads and 1 payer | The least a country needs for a clear read of its own value. With less, borrow comparable countries' value. |
+| Coverage 1.0 | Value per download ÷ cost per paid download: a download from a tap, first-time or redownload. At 1.0 or more the spend pays back. |
 | Coverage 0.7 | From 0.7 up to 1.0 is close to paying; under 0.7 it does not pay. |
 | Day 14, then day 30 | Read whether a campaign pays at day 14 and confirm it at day 30; never judge on 7 days. |
 
@@ -18,7 +18,7 @@ Every number the method in [../SKILL.md](../SKILL.md) uses, in one place. The bi
 
 | Number | Rule |
 |---|---|
-| 300 downloads over 30 days | A country's learning budget: about 10 first-time downloads a day at its own cost. |
+| 300 paid downloads over 30 days | A country's learning budget: about 10 paid downloads a day at its own cost. |
 | about 100 downloads | Leave out a country with no ads history and fewer downloads than this in the window. |
 | Six campaigns, an even split | Every country starts with all six, with its budget split evenly. |
 | 20% a week | Weekly budget move from the lowest-coverage campaign to the highest. |

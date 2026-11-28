@@ -3,7 +3,7 @@ name: launch-an-app
 description: Use when publishing a new app or a major update to the App Store or Google Play, preparing App Store Connect or Play Console for a first release, filling in App Privacy, the age rating or Data safety, getting through App Review, answering a rejection, or planning what to do in the first weeks after launch.
 license: MIT
 metadata:
-  version: '2.0.0'
+  version: '2.0.1'
 ---
 
 # Launch an App
@@ -165,7 +165,7 @@ Review of a new app can take several days. A policy rejection names the policy: 
 
 - **Reviews**: read and reply daily in launch week (see the `app-review-replies` skill).
 - **Search**: audit the listing once real search data arrives (see the `app-store-optimization` skill).
-- **Ads**: if you run Apple Ads, start with your brand terms plus up to 25 exact-match terms. Give each country a learning budget sized to buy about 300 first-time paid downloads over 30 days (about 10 a day): below that, results can't be read. Read what pays at day 14 and confirm it at day 30; never judge on 7 days. Then grow what pays (see the `apple-search-ads` skill).
+- **Ads**: if you run Apple Ads, start with your brand terms plus up to 25 exact-match terms. Give each country a learning budget sized to buy about 300 paid downloads (downloads after an ad tap, first-time or redownload) over 30 days (about 10 a day): below that, results can't be read. Read what pays at day 14 and confirm it at day 30; never judge on 7 days. Then grow what pays (see the `apple-search-ads` skill).
 - **Attribution**: know which downloads came from ads and which came from search.
 - **A weekly report** of downloads, proceeds, trials and ratings, rolled up the right way (see the `mobile-app-metrics` skill).
 - Keep the first version small and stable. A fast, fixed second update reads better than an ambitious first one.
@@ -177,7 +177,7 @@ Review of a new app can take several days. A policy rejection names the policy: 
 - **Review rounds**: one round is the goal; two is normal for a first app; a third on the same point means the fix didn't answer Apple's words.
 - **Time to live**: from "built" to "live", count the days and where they went. The Google Play closed test alone is 14.
 - **Staged rollout**: raise the share only while the crash rate on the new version stays at or below the last one's.
-- **The first weeks**: downloads per day from launch, the crash rate on the staged rollout, the first ratings, and, with ads, cost per first-time paid download against the learning budget.
+- **The first weeks**: downloads per day from launch, the crash rate on the staged rollout, the first ratings, and, with ads, cost per paid download against the learning budget.
 
 ## Hard gates
 
@@ -237,9 +237,9 @@ Wrenleaf, a demo plant watering app, free for five plants with one yearly subscr
 | Day 17 | Google Play approved; staged rollout at 20% |
 | Day 20 | Launch Tuesday: App Store released; Google Play raised to 100% |
 
-**First weeks:** reviews answered daily; brand plus 25 exact terms in Apple Ads in the US, with a learning budget for about 10 first-time paid downloads a day; a weekly report from week one.
+**First weeks:** reviews answered daily; brand plus 25 exact terms in Apple Ads in the US, with a learning budget for about 10 paid downloads a day; a weekly report from week one.
 
-**Judged after two weeks:** 20 days from built to live, 14 of them the closed test; two App Store review rounds (one point, fixed the same day) and one on Google Play; no crash above the normal rate in the staged rollout; 31 ratings averaging 4.6; ads at about 10 first-time paid downloads a day, so the learning budget is doing its job and the first read of what pays comes at day 14, confirmed at day 30.
+**Judged after two weeks:** 20 days from built to live, 14 of them the closed test; two App Store review rounds (one point, fixed the same day) and one on Google Play; no crash above the normal rate in the staged rollout; 31 ratings averaging 4.6; ads at about 10 paid downloads a day, so the learning budget is doing its job and the first read of what pays comes at day 14, confirmed at day 30.
 
 ## Works best through Fload: connect with MCP or the CLI
 
